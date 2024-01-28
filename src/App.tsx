@@ -1,8 +1,10 @@
+import Signup from "./Pages/Signup";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="bg-gray-950 w-full h-screen">
+      <Signup />
+    </div>
   );
 }
 
