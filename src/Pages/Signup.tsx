@@ -112,7 +112,7 @@ const Signup = (): ReactElement => {
             />
           </div>
           <button
-            className="ring-2 ring-[#00b0ff] text-gray-300 hover:text-white font-semibold text-lg p-2 rounded w-1/2 mx-auto my-4"
+            className="ring-2 ring-[#00b0ff] text-gray-300 hover:text-white hover:bg-[#00b0ff] font-semibold text-lg p-2 rounded w-1/2 mx-auto my-4"
             onClick={handleClick}
           >
             Sign up
