@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { FaPlusCircle } from "react-icons/fa";
+import TodoItem from "../components/TodoItem";
 
 const Todo = (): ReactElement => {
   return (
@@ -15,17 +16,24 @@ const Todo = (): ReactElement => {
             <p className="text-2xl text-gray-900 font-extrabold">1/3</p>
           </div>
         </div>
-        <div className="flex border mt-8 w-1/2 justify-center p-4 gap-4">
-          <textarea
-            name=""
-            id=""
-            cols={30}
-            className="w-1/2 h-16 resize-none p-4 bg-gray-900 text-white rounded-2xl outline-none text-left"
-            placeholder="Write your next task"
-          ></textarea>
-          <button className="">
-            <FaPlusCircle className="text-3xl text-red-500" />
-          </button>
+        <div className="w-full flex flex-col items-center">
+          <div className="flex mt-8 w-1/2 justify-center p-4 gap-4">
+            <textarea
+              name=""
+              id=""
+              cols={30}
+              className="w-1/2 h-16 resize-none p-4 bg-gray-900 text-white rounded-2xl outline-none text-left"
+              placeholder="Write your next task"
+            ></textarea>
+            <button className="">
+              <FaPlusCircle className="text-3xl text-red-500" />
+            </button>
+          </div>
+          <div className="flex flex-col w-1/2 items-center gap-2">
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+          </div>
         </div>
       </div>
     </div>
